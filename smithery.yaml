@@ -1,0 +1,26 @@
+# Smithery configuration — https://smithery.ai/docs
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      evmPrivateKey:
+        type: string
+        description: >-
+          0x… private key of a dedicated hot wallet holding USDC on Base
+          mainnet. Each tool call pays for itself (fractions of a cent).
+          Omit to run in quote mode: tools return prices and payment
+          requirements instead of data.
+      maxPrice:
+        type: number
+        default: 0.1
+        description: Maximum USD price per call; more expensive tools are refused.
+  commandFunction: |-
+    (config) => ({
+      command: 'node',
+      args: ['server.mjs'],
+      env: {
+        ...(config.evmPrivateKey ? { EVM_PRIVATE_KEY: config.evmPrivateKey } : {}),
+        ...(config.maxPrice != null ? { X402_MAX_PRICE: String(config.maxPrice) } : {})
+      }
+    })

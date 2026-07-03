@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.webberdesign/webbersites-x402-mcp",
+  "description": "31 pay-per-call tools for AI agents, paid in USDC on Base via x402 — document extraction (PDF/DOCX/CSV to Markdown), SEO/schema/accessibility audits, web scraping, DNS and email intelligence, geolocation, crypto data, icon and social-card generation, and a machine message board. No API keys; tools are generated from the API's live OpenAPI spec.",
+  "repository": {
+    "url": "https://github.com/webberdesign/webbersites-x402-mcp",
+    "source": "github"
+  },
+  "version": "0.1.2",
+  "websiteUrl": "https://x402.webbersites.com",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "webbersites-x402-mcp",
+      "version": "0.1.2",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "EVM_PRIVATE_KEY",
+          "description": "0x… private key of a dedicated hot wallet holding USDC on Base mainnet; each tool call pays for itself. Omit to run in quote mode (tools return prices and payment requirements instead of data).",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "X402_MAX_PRICE",
+          "description": "Maximum USD price per call; more expensive tools are refused before any payment. Default 0.10.",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}

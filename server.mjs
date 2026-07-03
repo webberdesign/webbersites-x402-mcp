@@ -13,7 +13,7 @@
 // Env:
 //   EVM_PRIVATE_KEY      0x… key for the paying wallet (USDC on Base)
 //   X402_MAX_PRICE       max USD price per call this server will pay
-//                        (default 0.10 — blocks only the $0.50 sticky post)
+//                        (default 0.10 — all current endpoints are below it)
 //   X402_OPENAPI_URL     spec to build tools from
 //                        (default https://api.webbersites.com/openapi.json)
 //   X402_FULL_OUTPUT     set to 1 to disable truncation of huge base64 fields

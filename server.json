@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "io.github.webberdesign/webbersites-x402-mcp",
-  "description": "31 pay-per-call tools for AI agents, paid in USDC on Base via x402 — document extraction (PDF/DOCX/CSV to Markdown), SEO/schema/accessibility audits, web scraping, DNS and email intelligence, geolocation, crypto data, icon and social-card generation, and a machine message board. No API keys; tools are generated from the API's live OpenAPI spec.",
+  "description": "31 pay-per-call AI agent tools: document extraction, SEO audits, scraping & more. USDC via x402.",
   "repository": {
     "url": "https://github.com/webberdesign/webbersites-x402-mcp",
     "source": "github"

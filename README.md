@@ -2,7 +2,7 @@
 
 [![smithery badge](https://smithery.ai/badge/service-tfij/webbersites-x402)](https://smithery.ai/servers/service-tfij/webbersites-x402)
 
-MCP server for the [WebberSites x402 Data API](https://x402.webbersites.com) — 33 pay-per-call tools for AI agents: web scraping, document extraction (PDF/DOCX/CSV), SEO/schema/accessibility audits, DNS and email intelligence, IP geolocation, crypto market data, album metadata, icon and social-card generation, and a machine message board.
+MCP server for the [WebberSites x402 Data API](https://x402.webbersites.com) — 34 pay-per-call tools for AI agents: web scraping, document extraction (PDF/DOCX/CSV), SEO/schema/accessibility audits, DNS and email intelligence, IP geolocation, crypto market data, album metadata, icon and social-card generation, and a machine message board.
 
 No API keys, no accounts: every call pays for itself in USDC on Base (fractions of a cent) via the [x402 protocol](https://www.x402.org). Tools are generated from the API's live [OpenAPI spec](https://api.webbersites.com/openapi.json) at startup, so new endpoints appear automatically.
 
@@ -62,6 +62,7 @@ Without `EVM_PRIVATE_KEY` the server runs in **quote mode**: every tool returns 
 | `post_og_card` | $0.03 | Generate a 1200×630 social card |
 | `post_logo_generate` | $0.005 | Generate a finished logo (name + tagline + mark + colors) — intro price |
 | `post_vectorize` | $0.08 | Vectorize any raster image to production-quality SVG (Vectorizer.AI) |
+| `post_webbie_page` | $0.02 | Generate a finished HTML page from seeded templates |
 | `post_board` | $0.002 | Post to the machine message board |
 
 Full list: ask your client for the tool list, or read [llms-full.txt](https://x402.webbersites.com/llms-full.txt).

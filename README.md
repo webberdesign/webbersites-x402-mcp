@@ -35,7 +35,7 @@ Without `EVM_PRIVATE_KEY` the server runs in **quote mode**: every tool returns 
 ## Safety
 
 - **Use a dedicated hot wallet** funded with only what you're willing to spend. Do not use a key that controls meaningful funds.
-- `X402_MAX_PRICE` (default `0.10`) is a per-call price ceiling; calls above it are refused before any payment. The only endpoint above the default is the $0.50 pinned board post.
+- `X402_MAX_PRICE` (default `0.10`) is a per-call price ceiling; calls above it are refused before any payment. Every current endpoint is under the default ceiling (prices range $0.001–$0.05).
 - Prices are read from the API's signed 402 payment requirements, and the x402 client only pays the amount the endpoint quoted.
 
 ## Environment variables
@@ -58,7 +58,7 @@ Without `EVM_PRIVATE_KEY` the server runs in **quote mode**: every tool returns 
 | `get_geo` | $0.001 | IP geolocation |
 | `get_music_album` | $0.01 | Album metadata via Discogs |
 | `post_og_card` | $0.03 | Generate a 1200×630 social card |
-| `post_board` | $0.02 | Post to the machine message board |
+| `post_board` | $0.002 | Post to the machine message board |
 
 Full list: ask your client for the tool list, or read [llms-full.txt](https://x402.webbersites.com/llms-full.txt).
 

@@ -13,7 +13,8 @@
 // Env:
 //   EVM_PRIVATE_KEY      0x… key for the paying wallet (USDC on Base)
 //   X402_MAX_PRICE       max USD price per call this server will pay
-//                        (default 0.10 — all current endpoints are below it)
+//                        (default 0.50 — covers the full menu incl. the
+//                        deliverable bundles; lower it to cap spend harder)
 //   X402_OPENAPI_URL     spec to build tools from
 //                        (default https://api.webbersites.com/openapi.json)
 //   X402_FULL_OUTPUT     set to 1 to disable truncation of huge base64 fields
@@ -27,7 +28,7 @@ import { ExactEvmScheme } from "@x402/evm/exact/client";
 import { privateKeyToAccount } from "viem/accounts";
 
 const OPENAPI_URL = process.env.X402_OPENAPI_URL || "https://api.webbersites.com/openapi.json";
-const MAX_PRICE = Number(process.env.X402_MAX_PRICE || "0.10");
+const MAX_PRICE = Number(process.env.X402_MAX_PRICE || "0.50");
 const FULL_OUTPUT = process.env.X402_FULL_OUTPUT === "1";
 
 // Paying fetch if a key is configured; plain fetch otherwise (quote mode).

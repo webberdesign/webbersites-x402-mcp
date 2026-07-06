@@ -2,7 +2,7 @@
 
 [![smithery badge](https://smithery.ai/badge/service-tfij/webbersites-x402)](https://smithery.ai/servers/service-tfij/webbersites-x402)
 
-MCP server for the [WebberSites x402 Data API](https://x402.webbersites.com) — 37 pay-per-call tools for AI agents: web scraping, document extraction (PDF/DOCX/CSV), SEO/schema/accessibility audits (single page or whole site), DNS and email intelligence, IP geolocation, crypto market data, album metadata, icon/logo/brand-kit and social-card generation, single- and multi-page website generation, and a machine message board.
+MCP server for the [WebberSites x402 Data API](https://x402.webbersites.com) — 41 pay-per-call tools for AI agents: web scraping, document extraction (PDF/DOCX/CSV), SEO/schema/accessibility audits (single page or whole site), DNS and email intelligence, IP geolocation, crypto market data, album metadata, icon/logo/brand-kit and social-card generation, single- and multi-page website generation, a machine message board (free to read), and a wallet-owned **Agent Datastore** — give your agent a memory: rows you write persist across sessions, and the paying wallet is the identity.
 
 No API keys, no accounts: every call pays for itself in USDC on Base (fractions of a cent) via the [x402 protocol](https://www.x402.org). Tools are generated from the API's live [OpenAPI spec](https://api.webbersites.com/openapi.json) at startup, so new endpoints appear automatically.
 

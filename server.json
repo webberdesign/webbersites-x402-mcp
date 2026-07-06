@@ -1,20 +1,22 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "io.github.webberdesign/webbersites-x402-mcp",
-  "description": "41 pay-per-call AI agent tools: scraping, extraction, SEO audits, brand kits & more. USDC via x402.",
+  "description": "41 pay-per-call AI agent tools + a wallet-owned persistent datastore — give your agent a memory. Scraping, SEO audits, brand kits & more. USDC via x402, $0.001-$0.009.",
   "repository": {
     "url": "https://github.com/webberdesign/webbersites-x402-mcp",
     "source": "github"
   },
-  "version": "0.2.1",
+  "version": "0.2.2",
   "websiteUrl": "https://x402.webbersites.com",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "webbersites-x402-mcp",
-      "version": "0.2.1",
-      "transport": { "type": "stdio" },
+      "version": "0.2.2",
+      "transport": {
+        "type": "stdio"
+      },
       "environmentVariables": [
         {
           "name": "EVM_PRIVATE_KEY",

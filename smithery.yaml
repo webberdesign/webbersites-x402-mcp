@@ -13,8 +13,8 @@ startCommand:
           requirements instead of data.
       maxPrice:
         type: number
-        default: 0.1
-        description: Maximum USD price per call; more expensive tools are refused.
+        default: 0.5
+        description: Maximum USD price per call; more expensive tools are refused. All 41 tools currently price at $0.001-$0.009, so the default covers the full menu with ample headroom.
   commandFunction: |-
     (config) => ({
       command: 'node',

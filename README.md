@@ -32,6 +32,8 @@ claude mcp add webbersites-x402 \
 }
 ```
 
+**Smithery (hosted, no local install):** connect through [smithery.ai/servers/service-tfij/webbersites-x402](https://smithery.ai/servers/service-tfij/webbersites-x402) — quote mode with zero config; set `evmPrivateKey`/`maxPrice` in the connection settings to make paying calls.
+
 Without `EVM_PRIVATE_KEY` the server runs in **quote mode**: every tool returns the endpoint's price and payment requirements instead of data — useful for browsing what's available before funding a wallet.
 
 ## Safety

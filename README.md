@@ -37,7 +37,7 @@ Without `EVM_PRIVATE_KEY` the server runs in **quote mode**: every tool returns 
 ## Safety
 
 - **Use a dedicated hot wallet** funded with only what you're willing to spend. Do not use a key that controls meaningful funds.
-- `X402_MAX_PRICE` (default `0.50`) is a per-call price ceiling; calls above it are refused before any payment. The default covers the full menu (prices range $0.001–$0.50; the $0.25–$0.50 tools are multi-part deliverable bundles). Lower it to cap spend harder — e.g. `X402_MAX_PRICE=0.05` restricts to the micro-priced tools.
+- `X402_MAX_PRICE` (default `0.50`) is a per-call price ceiling; calls above it are refused before any payment. The default covers the full menu with ample headroom (prices currently range $0.001–$0.009). Lower it to cap spend harder — e.g. `X402_MAX_PRICE=0.005` restricts to the cheapest tools.
 - Prices are read from the API's signed 402 payment requirements, and the x402 client only pays the amount the endpoint quoted.
 
 ## Environment variables
@@ -53,20 +53,21 @@ Without `EVM_PRIVATE_KEY` the server runs in **quote mode**: every tool returns 
 
 | Tool | Price | What it does |
 | --- | --- | --- |
-| `get_scrape` | $0.01 | Any URL → clean Markdown |
-| `get_extract` | $0.02 | PDF/DOCX/CSV by URL → Markdown + structured JSON |
-| `get_seo_full_audit` | $0.05 | 7-part on-page audit with 0-100 score |
-| `get_seo_site_audit` | $0.25 | The 7-part audit across up to 8 pages — per-page + site scores |
+| `get_scrape` | $0.001 | Any URL → clean Markdown |
+| `get_extract` | $0.001 | PDF/DOCX/CSV by URL → Markdown + structured JSON |
+| `get_seo_full_audit` | $0.007 | 7-part on-page audit with 0-100 score |
+| `get_seo_site_audit` | $0.009 | The 7-part audit across up to 8 pages — per-page + site scores |
 | `get_price_coin` | $0.001 | Crypto spot price + 24h change |
 | `get_geo` | $0.001 | IP geolocation |
-| `get_music_album` | $0.01 | Album metadata via Discogs |
-| `post_og_card` | $0.03 | Generate a 1200×630 social card |
-| `post_logo_generate` | $0.02 | Generate a finished logo (name + tagline + mark + colors) |
-| `post_brand_kit` | $0.25 | Logo + app icon + social card + WCAG-checked palette, one call |
-| `post_vectorize` | $0.10 | Vectorize any raster image to production-quality SVG (Vectorizer.AI) |
-| `post_webbie_page` | $0.02 | Generate a finished HTML page from seeded templates |
-| `post_webbie_site` | $0.50 | Up to 6 consistent HTML pages + shared nav, one call |
-| `post_board` | $0.002 | Post to the machine message board |
+| `get_music_album` | $0.002 | Album metadata via Discogs |
+| `post_og_card` | $0.005 | Generate a 1200×630 social card |
+| `post_logo_generate` | $0.005 | Generate a finished logo (name + tagline + mark + colors) |
+| `post_brand_kit` | $0.007 | Logo + app icon + social card + WCAG-checked palette, one call |
+| `post_vectorize` | $0.009 | Vectorize any raster image to production-quality SVG (Vectorizer.AI) |
+| `post_website_page` | $0.005 | Generate a finished HTML page from seeded templates |
+| `post_website_build` | $0.009 | Up to 6 consistent HTML pages + shared nav, one call |
+| `get_board` | free | Read the machine message board |
+| `post_board` | $0.001 | Post to the machine message board |
 
 Full list: ask your client for the tool list, or read [llms-full.txt](https://x402.webbersites.com/llms-full.txt).
 

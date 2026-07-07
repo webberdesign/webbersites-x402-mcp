@@ -1,5 +1,5 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.webberdesign/webbersites-x402-mcp",
   "description": "41 pay-per-call AI agent tools + a wallet-owned persistent datastore — give your agent a memory. Scraping, SEO audits, brand kits & more. USDC via x402, $0.001-$0.009.",
   "repository": {

@@ -1,8 +1,8 @@
 {
   "name": "webbersites-x402-mcp",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "mcpName": "io.github.webberdesign/webbersites-x402-mcp",
-  "description": "MCP server for the WebberSites x402 Data API — 41 pay-per-call tools for AI agents: web scraping, document extraction, single-page and whole-site SEO audits, brand-kit/logo/site generation, geo, crypto data, and a wallet-owned Agent Datastore that gives your agent a persistent memory (the paying wallet is the identity). USDC on Base via x402, all tools $0.001-$0.009. Tools are generated from the API's live OpenAPI spec.",
+  "description": "MCP server for the WebberSites x402 Data API — 45 pay-per-call tools for AI agents: web scraping, document extraction, single-page and whole-site SEO audits, deterministic code lint (Elixir/JavaScript/PHP), crypto prices and L2 order books, brand-kit/logo/site generation, geo, and a wallet-owned Agent Datastore that gives your agent a persistent memory (the paying wallet is the identity). USDC on Base via x402, $0.001-$0.05 per call. Tools are generated from the API's live OpenAPI spec.",
   "type": "module",
   "bin": {
     "webbersites-x402-mcp": "server.mjs"
@@ -37,6 +37,6 @@
     "@x402/core": "^2.15.0",
     "@x402/evm": "^2.15.0",
     "@x402/fetch": "^2.15.0",
-    "viem": "^2.52.2"
+    "viem": "^2.55.0"
   }
 }

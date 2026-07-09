@@ -13,8 +13,8 @@
 // Env:
 //   EVM_PRIVATE_KEY      0x… key for the paying wallet (USDC on Base)
 //   X402_MAX_PRICE       max USD price per call this server will pay
-//                        (default 0.50 — covers the full menu incl. the
-//                        deliverable bundles; lower it to cap spend harder)
+//                        (default 0.50 — 10× headroom over the priciest tool,
+//                        currently $0.05; lower it to cap spend harder)
 //   X402_OPENAPI_URL     spec to build tools from
 //                        (default https://api.webbersites.com/openapi.json)
 //   X402_FULL_OUTPUT     set to 1 to disable truncation of huge base64 fields

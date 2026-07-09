@@ -1,19 +1,19 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.webberdesign/webbersites-x402-mcp",
-  "description": "41 pay-per-call AI agent tools + a wallet-owned persistent datastore — give your agent a memory. Scraping, SEO audits, brand kits & more. USDC via x402, $0.001-$0.009.",
+  "description": "45 pay-per-call AI agent tools + wallet-owned agent memory. Scraping, SEO, lint, crypto. x402 USDC",
   "repository": {
     "url": "https://github.com/webberdesign/webbersites-x402-mcp",
     "source": "github"
   },
-  "version": "0.2.2",
+  "version": "0.3.0",
   "websiteUrl": "https://x402.webbersites.com",
   "packages": [
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "webbersites-x402-mcp",
-      "version": "0.2.2",
+      "version": "0.3.0",
       "transport": {
         "type": "stdio"
       },
@@ -26,7 +26,7 @@
         },
         {
           "name": "X402_MAX_PRICE",
-          "description": "Maximum USD price per call; more expensive tools are refused before any payment. Default 0.50 (ample headroom — prices currently range $0.001-$0.009); lower it to cap spend harder.",
+          "description": "Maximum USD price per call; more expensive tools are refused before any payment. Default 0.50 (10x headroom — prices currently range $0.001-$0.05); lower it to cap spend harder.",
           "isRequired": false
         }
       ]
